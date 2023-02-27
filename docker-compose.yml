@@ -11,5 +11,3 @@ services:
       - 54320:5432
     volumes:
        - ./db/:/var/lib/postgresql/data
-
-ache ??
