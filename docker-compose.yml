@@ -1,0 +1,15 @@
+version: '3'
+services:
+ db:
+    build: .
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+    ports: 
+      - 54320:5432
+    volumes:
+       - ./db/:/var/lib/postgresql/data
+
+ache ??
